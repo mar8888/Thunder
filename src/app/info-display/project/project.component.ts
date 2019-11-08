@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
+  project: string = "Thunder Tec";
+  organization: string = "Thunder";
 
   constructor() { }
 

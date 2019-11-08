@@ -1,1 +1,11 @@
-<p>info-display works!</p>
+<div class="row">
+    <div class="col-lg-4" [ngStyle]="{backgroundColor: 'orange'}">
+        <app-hours [headerText]="'Horas Acreditadas'"></app-hours>
+    </div>
+    <div class="col-lg-4" [ngStyle]="{backgroundColor: 'green'}">
+        <app-project></app-project>
+    </div>
+    <div class="col-lg-4" [ngStyle]="{backgroundColor: 'blue'}">
+        <app-hours [headerText]="'Horas por Acreditar'"></app-hours>
+    </div>
+</div>
