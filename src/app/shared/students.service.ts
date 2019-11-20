@@ -28,7 +28,7 @@ export class StudentsService {
 
     fetchData(id: String) : Student {
         var stud: Student;
-        readXlsxFile('', { schema }).then(({rows, errors}) => {
+        readXlsxFile('./alumnos.xlsx', { schema }).then(({rows, errors}) => {
             if(errors.length === 0) {
                 rows.forEach(s => {
                     if(s[0]===id) {
