@@ -16,6 +16,19 @@ export class AppComponent{
   }
 
   onQuerySent(id: String) {
+    if(id === 'A01196903') {
+      console.log(id);
+      console.log('120 horas de ciudadano');
+      console.log('0 horas de profesional');
+      console.log('SIASS con Thunder');
+    }
+
+    if(id === 'A01197048') {
+      console.log(id);
+      console.log('60 horas de ciudadano');
+      console.log('0 horas de profesional');
+      console.log("Web Dev con CVA");
+    }
     this.student = this.data.fetchData(id);
   }
 
